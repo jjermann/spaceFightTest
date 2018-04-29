@@ -1,11 +1,12 @@
 import React from 'react';
+import { gridSize } from '../utils/constants';
 
 const MainGrid = () => {
     const gridStyle = {
       fill: '#30abef',
     };
-    const gridWidth = 2000;
-    const gridHeight = 2000;
+    const gridWidth = gridSize;
+    const gridHeight = gridSize;
     return (
       <rect
         style={gridStyle}
