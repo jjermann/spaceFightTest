@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MainGrid from './MainGrid';
+import HexagonalGrid from './HexagonalGrid';
 import { gridSize } from '../utils/constants';
 
 const Canvas = (props) => {
-  const viewBox = [window.innerWidth / -2, window.innerHeight / -2, window.innerWidth, window.innerHeight];
+  const viewBox = [0, 0, window.innerWidth, window.innerHeight];
   const gridData = [
     [-props.grx,-props.gry],
     [-props.grx,10]
@@ -16,7 +16,7 @@ const Canvas = (props) => {
       onMouseMove={props.trackMouse}
       viewBox={viewBox}
     >
-      <MainGrid gridWidth={gridSize} gridHeight={gridSize} gridData={gridData}/>
+      <HexagonalGrid gridWidth={10} gridHeight={6} gridData={gridData}/>
     </svg>
   );
 };
