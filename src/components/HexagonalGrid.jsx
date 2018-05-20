@@ -45,7 +45,6 @@ const HexagonalGrid = (props) => {
   HexagonalGrid.propTypes = {
     gridWidth: PropTypes.number.isRequired,
     gridHeight: PropTypes.number.isRequired,
-    gridData: PropTypes.array.isRequired,
   };
 
   export default HexagonalGrid;
